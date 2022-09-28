@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "activityImg": "https://img.freepik.com/free-photo/soccer-players-action-professional-stadium_654080-1241.jpg?w=1060&t=st=1664378489~exp=1664379089~hmac=1bdb044fe723f885f804703253433683196c3f741c480c43766dcf0a3becb0c6",
+    "acitivityName": "Football",
+    "acitivityDuration": 1.5,
+    "acitivityDes": "I try to play football every morning, so that I can stay fit"
+  },
+  {
+    "id": 2,
+    "activityImg": "https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=1060&t=st=1664379389~exp=1664379989~hmac=5d2c9b44529bbfa54db84fb14c0f4f1f3efdd7675cbaa10f60f68836e359d45c",
+    "acitivityName": "Reading Books",
+    "acitivityDuration": 2,
+    "acitivityDes": "One of my favourite activitirs. I usually read books everyday"
+  },
+  {
+    "id": 3,
+    "activityImg": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=1060&t=st=1664379685~exp=1664380285~hmac=c7b77d1ac32c9c8ccc056916d27da12ad76b469ab295f816349573ac2b116d4a",
+    "acitivityName": "Web Development",
+    "acitivityDuration": 6,
+    "acitivityDes": "This is my main job. More over I like to do this job."
+  },
+  {
+    "id": 4,
+    "activityImg": "https://img.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_1150-7513.jpg?w=1060&t=st=1664380329~exp=1664380929~hmac=9b657376d0cee78a41caba67c8098d128f3e3a9e39edd62c9d7eb565826b2477",
+    "acitivityName": "Cycling",
+    "acitivityDuration": 1,
+    "acitivityDes": "Everyday I like to ride on my cycle in evening"
+  },
+  {
+    "id": 5,
+    "activityImg": "https://img.freepik.com/free-photo/young-male-swimming-lake_23-2148648273.jpg?w=1060&t=st=1664380864~exp=1664381464~hmac=5dd32ff6ec83789b9ca06a5caa206d304fca0657daba0018ad0585aec7b4c427",
+    "acitivityName": "Swiming",
+    "acitivityDuration": 1,
+    "acitivityDes": "I like this activity most. It keeps my body and mind fresh."
+  },
+  {
+    "id": 6,
+    "activityImg": "https://img.freepik.com/free-photo/portrait-happy-young-man-wearing-headphone-enjoy-music-white-background_1150-63322.jpg?w=1060&t=st=1664381188~exp=1664381788~hmac=557d41ae3fd6bfecbafc223651880f21250b23c4069562fa72d1e5350dc642e3",
+    "acitivityName": "Listening Music",
+    "acitivityDuration": 1,
+    "acitivityDes": "It removes all of my stress. Keep relax my brain."
+  }
+]
