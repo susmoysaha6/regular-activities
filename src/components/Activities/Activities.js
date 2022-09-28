@@ -1,12 +1,15 @@
 import React from 'react';
-import Activity from '../Acitivity/Activity';
 import './Activities.css'
+import Activity from '../Acitivity/Activity';
 
-const Activities = () => {
+const Activities = ({ activities }) => {
+    // console.log(activities);
     return (
         <div>
-            <h1>This is from Activities</h1>
-            <Activity></Activity>
+            <h1>Select your Regular</h1>
+            {
+                activities.map(activity => <Activity key={activity.id} activity={activity} ></Activity>)
+            }
         </div>
     );
 };
