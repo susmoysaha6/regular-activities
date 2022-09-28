@@ -1,6 +1,6 @@
 .activities-container {
     margin-left: 60px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .card-continer {
@@ -8,4 +8,37 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-top: 10px;
+}
+
+.activities-heading {
+    color: rgb(84, 84, 84);
+}
+
+@media screen and (max-width: 575px) {
+
+    .activities-container {
+        margin-left: 0;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .activities-heading {
+        text-align: center;
+    }
+
+    .card-continer {
+        margin-left: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 575px) and (max-width: 992px) {
+    .card-continer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
