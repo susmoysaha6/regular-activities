@@ -1,10 +1,12 @@
 import React from 'react';
 import './Nav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPersonRunning } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
     return (
-        <div>
-            <h1>This is from nav</h1>
+        <div className='nav'>
+            <h4 className='nav-title'><FontAwesomeIcon icon={faPersonRunning} /> Regular Acitivities</h4>
         </div>
     );
 };

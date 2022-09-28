@@ -1,5 +1,6 @@
 import React from 'react';
 import Activities from '../Activities/Activities';
+import List from '../List/List';
 import Nav from '../Nav/Nav';
 import './Home.css';
 
@@ -11,7 +12,7 @@ const Home = () => {
                 <Activities></Activities>
             </div>
             <div className="list-container">
-                <h1>This is from list</h1>
+                <List></List>
             </div>
         </div>
     );

@@ -1,0 +1,13 @@
+.nav {
+    color: antiquewhite;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.nav-title {
+    display: inline;
+    background-color: slateblue;
+    padding: 20px;
+    border-radius: 5px;
+}
