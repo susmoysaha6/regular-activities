@@ -3,13 +3,14 @@ import './Activities.css'
 import Activity from '../Acitivity/Activity';
 
 const Activities = ({ activities }) => {
-    // console.log(activities);
     return (
-        <div>
-            <h1>Select your Regular</h1>
-            {
-                activities.map(activity => <Activity key={activity.id} activity={activity} ></Activity>)
-            }
+        <div className='activities-container'>
+            <h3>Select Regular Activities</h3>
+            <div className='card-continer'>
+                {
+                    activities.map(activity => <Activity key={activity.id} activity={activity} ></Activity>)
+                }
+            </div>
         </div>
     );
 };

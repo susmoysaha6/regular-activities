@@ -3,16 +3,13 @@ import './Activity.css';
 
 const Activity = ({ activity }) => {
     const { activityImg, acitivityDes, acitivityName, acitivityDuration } = activity;
-    console.log(activity);
-
-    // console.log(props.activity);
     return (
         <div className='card'>
-            <img width={200} src={activityImg} alt="" />
-            <h4>{acitivityName}</h4>
-            <p><small>{acitivityDes}</small></p>
-            <p>{acitivityDuration}hrs</p>
-            <button>Add to List</button>
+            <img className="card-img" src={activityImg} alt="" />
+            <h4 className='card-details'>{acitivityName}</h4>
+            <p className='card-details'> <small >{acitivityDes}</small></p>
+            <p className='card-details'>Duration: {acitivityDuration} hrs</p>
+            <button className='list-btn'>Add to List</button>
         </div>
     );
 };
