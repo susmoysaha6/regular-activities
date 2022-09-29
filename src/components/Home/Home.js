@@ -6,6 +6,7 @@ import './Home.css';
 
 const Home = () => {
     const [activities, setActivities] = useState([]);
+    const [time, setTime] = useState(0);
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -16,11 +17,11 @@ const Home = () => {
             <div className="main-container">
                 <Nav></Nav>
                 <div>
-                    <Activities activities={activities}></Activities>
+                    <Activities activities={activities} time={time} setTime={setTime}></Activities>
                 </div>
             </div>
             <div className="list-container">
-                <List></List>
+                <List time={time}></List>
             </div>
         </div>
     );

@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 
 
 
-const List = () => {
+const List = ({ time }) => {
     const handleCompleted = () => {
         toast("Activity Completed For Today");
     }
@@ -46,7 +46,7 @@ const List = () => {
                 <h3>Activity Details</h3>
                 <div className='time-container'>
                     <h3>Activity Time</h3>
-                    <p>0</p>
+                    <h4>{time} hrs</h4>
                 </div>
                 <div className='time-container'>
                     <h3>Break Time</h3>
