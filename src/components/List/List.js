@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './List.css';
 import my from '../../images/my.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +8,16 @@ import { toast } from 'react-toastify';
 
 
 const List = ({ time }) => {
+    const [addBreak, setAddBreak] = useState(0);
+    useEffect(() => {
+        const breakTime = localStorage.getItem('break-time');
+        setAddBreak(breakTime);
+    }, [])
+    const handleAddBreak = (breakTime) => {
+        setAddBreak(breakTime);
+        localStorage.setItem('break-time', breakTime);
+    }
+
     const handleCompleted = () => {
         toast("Activity Completed For Today");
     }
@@ -35,11 +45,11 @@ const List = ({ time }) => {
             <div>
                 <h3>Add A Break</h3>
                 <div className='break-container'>
-                    <button className='break-btn'>15m</button>
-                    <button className='break-btn'>20m</button>
-                    <button className='break-btn'>30m</button>
-                    <button className='break-btn'>45m</button>
-                    <button className='break-btn'>60m</button>
+                    <button onClick={() => handleAddBreak(15)} className='break-btn'>15m</button>
+                    <button onClick={() => handleAddBreak(20)} className='break-btn'>20m</button>
+                    <button onClick={() => handleAddBreak(30)} className='break-btn'>30m</button>
+                    <button onClick={() => handleAddBreak(45)} className='break-btn'>45m</button>
+                    <button onClick={() => handleAddBreak(60)} className='break-btn'>60m</button>
                 </div>
             </div>
             <div>
@@ -50,7 +60,7 @@ const List = ({ time }) => {
                 </div>
                 <div className='time-container'>
                     <h3>Break Time</h3>
-                    <p>0</p>
+                    <h5>{addBreak} min</h5>
                 </div>
             </div>
             <button onClick={handleCompleted} className='completed-btn'>Activity Completed</button>
