@@ -1,6 +1,8 @@
 .list-container {
     background-color: white;
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
     color: rgb(84, 84, 84);
 }
 
@@ -21,6 +23,7 @@
     margin-top: 20px;
     display: flex;
     text-align: center;
+    justify-content: space-around;
     padding-left: 10px;
 }
 
@@ -35,4 +38,60 @@
 
 .user-name {
     padding-bottom: 0;
+}
+
+.info {
+    padding-left: 10px;
+}
+
+.break-container {
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px gray;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-left: 10px;
+
+}
+
+.break-btn {
+    border: none;
+    color: rgb(84, 84, 84);
+    padding: 15px 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.break-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px gray;
+}
+
+.completed-btn {
+    width: 100%;
+    background-color: rgb(55, 24, 255);
+    color: whitesmoke;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px lightslategray;
+}
+
+.completed-btn:hover {
+    background-color: brown;
 }
