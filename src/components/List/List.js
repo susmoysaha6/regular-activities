@@ -11,16 +11,16 @@ const List = ({ time }) => {
     const [addBreak, setAddBreak] = useState(0);
     useEffect(() => {
         const breakTime = localStorage.getItem('break-time');
-        setAddBreak(breakTime);
-    }, [])
+        setAddBreak(breakTime ? breakTime : 0);
+    }, []);
     const handleAddBreak = (breakTime) => {
         setAddBreak(breakTime);
         localStorage.setItem('break-time', breakTime);
-    }
+    };
 
     const handleCompleted = () => {
         toast("Activity Completed For Today");
-    }
+    };
     return (
         <div className='list-container'>
             <div className='personal-info'>

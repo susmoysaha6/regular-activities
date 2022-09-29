@@ -16,9 +16,7 @@ const Home = () => {
         <div className='home'>
             <div className="main-container">
                 <Nav></Nav>
-                <div>
-                    <Activities activities={activities} time={time} setTime={setTime}></Activities>
-                </div>
+                <Activities activities={activities} time={time} setTime={setTime}></Activities>
             </div>
             <div className="list-container">
                 <List time={time}></List>
